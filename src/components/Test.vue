@@ -4,7 +4,9 @@ import { ref, onMounted } from 'vue'
 const el = ref('test')
 
 onMounted(() => {
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
+    let rnd = Math.random()*100
+    let idx= rnd<50?1:2;
+    fetch('https://jsonplaceholder.typicode.com/todos/'+idx)
       .then(response => response.json())
       .then(json => el.value=json.title)
 })
