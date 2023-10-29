@@ -2,16 +2,31 @@
 import { ref, onMounted } from 'vue'
 
 const el = ref('test')
+let medici = ref([])
 
-onMounted(() => {
+
+onMounted(async () => {
     let rnd = Math.random()*100
     let idx= rnd<50?1:2;
-    fetch('https://jsonplaceholder.typicode.com/todos/'+idx)
-      .then(response => response.json())
-      .then(json => el.value=json.title)
+
+
+    const response = await fetch('http://ionjianu.smupitesti.org:3339/totimedicii',{
+        headers:{
+            idclinica:3
+        }
+        })
+medici.value= await response.json()
+console.log(medici)
 })
+
 </script>
 
 <template>
-    <h1>Component VUE {{ el }}</h1>
+    <div>
+        
+                <div v-for="m in medici.medici">
+                    {{ m.nume }}
+                 </div>
+    </div>
+
 </template>
