@@ -28,3 +28,6 @@
 .bi-facebook::before { content: "\f344"; }
 .bi-instagram::before { content: "\f437"; }
 .bi-linkedin::before { content: "\f472"; }
+.bi-chevron-down::before { content: "\f282"; }
+.bi-chevron-right::before { content: "\f285"; }
+.bi-list::before { content: "\f479"; }
