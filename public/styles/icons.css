@@ -5,6 +5,37 @@
   url("./fonts/bootstrap-icons.woff?2820a3852bdb9a5832199cc61cec4e65") format("woff");
   }
   
+  @font-face
+{
+    font-family: 'boxicons';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/boxicons.eot');
+    src: url('./fonts/boxicons.eot') format('embedded-opentype'),
+    url('./fonts/boxicons.woff2') format('woff2'),
+    url('./fonts/boxicons.woff') format('woff'),
+    url('./fonts/boxicons.ttf') format('truetype'),
+    url('./fonts/boxicons.svg?#boxicons') format('svg');
+}
+
+.bx
+{
+    font-family: 'boxicons' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
   .bi::before,
   [class^="bi-"]::before,
   [class*=" bi-"]::before {
@@ -33,3 +64,19 @@
 .bi-list::before { content: "\f479"; }
 .bi-list::before { content: "\f479"; }
 .bi-x::before { content: "\f62a"; }
+
+
+
+
+.bx-receipt:before {
+  content: "\ebd5";
+}
+.bx-chevron-right:before {
+  content: "\ea50";
+}
+.bx-cube-alt:before {
+  content: "\ea8e";
+}
+.bx-images:before {
+  content: "\eb1e";
+}
