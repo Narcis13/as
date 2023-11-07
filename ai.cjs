@@ -1,16 +1,10 @@
-//console.log('AI')
 
-/*import { Configuration, OpenAIApi } from "openai";
-const configuration = new Configuration({
-    organization: "org-MMPWRNetj6p7OliDabSjZye3",
-    apiKey: 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,
-});*/
 const OpenAI = require("openai")
 
 
 
 const openai = new OpenAI({
-    apiKey: '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',
+    apiKey: '',
 })
 
 async function main(){
