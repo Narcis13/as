@@ -1,2 +1,2 @@
 # Astro Starter Kit: Basics
-Proiect clonat
+Proiect clona!
